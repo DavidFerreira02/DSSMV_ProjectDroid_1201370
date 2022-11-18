@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/library"
+        tools:context=".MainActivity">
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+            android:text="Funcionario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textview"/>
+    <Button
+            android:text="Criar um livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/criarLivro"
+            android:backgroundTint="@color/black"/>
+    <Button
+            android:text="Alterar quantidade de um livro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/alterarLivro"
+            android:backgroundTint="@color/black"/>
+    <Button
+            android:text="Listar todos os livros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/listarLivros"
+            android:backgroundTint="@color/black"/>
+    <Button
+            android:text="Alterar informações da biblioteca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/alterarBiblioteca"
+            android:backgroundTint="@color/black"/>
+
+    <Button
+            android:text="Listar comentários sobre os livros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/listarComentarios"/>
+    <Button
+            android:text="Quantidade de comentários positivos sobre um livro "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/quantidadePositivos"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
