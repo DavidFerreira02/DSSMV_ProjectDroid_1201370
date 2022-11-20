@@ -119,63 +119,7 @@ public class RequestsService {
             });
         }
     }
-    public static void addCheckOut(String isbn,String userId, Activity activity) {
-        try{
-            String url = Utils.getWSAddress(activity)+"library/"+Utils.BIBLIOTECAID+"/book/"+isbn+"/checkout?userId="+userId;
-            lastUrl = url;
-            String result = NetworkHandler.returnDataInStringFromUrl(url);
-        }catch(Exception e){
-            e.printStackTrace();
-            activity.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(activity, "Erro"+e.toString(), Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-    }
-    public static void addCheckIn(String isbn,String userId, Activity activity) {
-        try{
-            String url = Utils.getWSAddress(activity)+"library/"+Utils.BIBLIOTECAID+"/book/"+isbn+"/checkin?userId="+userId;
-            lastUrl = url;
-            String result = NetworkHandler.returnDataInStringFromUrl(url);
-        }catch(Exception e){
-            e.printStackTrace();
-            activity.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(activity, "Erro"+e.toString(), Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-    }
-    public static String getIdCheckOutBook(String isbn,String userId,Activity activity) {
-        try{
-            String url = Utils.getWSAddress(activity)+"user/check-out?userId="+userId;
-            String json = NetworkHandler.getDataInStringFromUrl(url);
-            lastUrl = url;
-            String id = JsonHandler.findIdCheckOut(json,isbn,userId);
-            return id ;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-    public static void extendCheckOut(String id, Activity activity) {
-        try{
-            String url = Utils.getWSAddress(activity)+"checkout/"+id+"extend" ;
-            lastUrl = url;
-            String result = NetworkHandler.returnDataInStringFromUrl(url);
-        }catch(Exception e){
-            e.printStackTrace();
-            activity.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(activity, "Erro"+e.toString(), Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-    }
+
     public static int getRecommendedCount(String isbn,Activity activity) {
         try{
             String url = Utils.getWSAddress(activity)+"book/"+isbn+"/review/recommended-count";

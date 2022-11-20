@@ -36,17 +36,5 @@ public class Utils {
         editor.putInt(IP4, ip4);
         editor.commit();
     }
-    /*public static int getIPNumber(Context context, String IP){
-        SharedPreferences settings = context.getSharedPreferences(MYSHPREFS, Context.MODE_PRIVATE);
-        return settings.getInt(IP, 0);
-    }
-    public static String getIPAddress(Context context){
-        SharedPreferences settings = context.getSharedPreferences(MYSHPREFS, Context.MODE_PRIVATE);
-        int ip1 = settings.getInt(IP1, 193);
-        int ip2 = settings.getInt(IP2, 136);
-        int ip3 = settings.getInt(IP3, 62);
-        int ip4 = settings.getInt(IP4, 24);
 
-        return ip1+"."+ip2+"."+ip3+"."+ip4;
-    }*/
 }

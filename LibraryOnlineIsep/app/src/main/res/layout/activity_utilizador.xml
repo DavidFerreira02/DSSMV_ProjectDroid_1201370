@@ -21,15 +21,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textview"/>
     <Button
-            android:text="Criar uma comentario num livro"
+            android:text="Criar um comentário num livro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/criarComentario"/>
     <Button
-            android:text="Alterar comentario de um livro"
+            android:text="Alterar um comentario de um livro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/alterarComentario"/>
     <Button
-            android:text="Listar todos os comentarios"
+            android:text="Listar todos os comentários de um user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/listarComentarios"/>
     <Button
