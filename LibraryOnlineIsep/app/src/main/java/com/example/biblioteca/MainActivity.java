@@ -92,9 +92,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.reload:
                 getInfoDataFromWS();
                 return true;
-            case R.id.settings:
-                openSettingsMainActivity();
-                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

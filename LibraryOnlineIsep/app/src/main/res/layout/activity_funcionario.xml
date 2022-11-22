@@ -20,7 +20,8 @@
     <TextView
             android:text="Funcionario"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textview"/>
+            android:layout_height="wrap_content" android:id="@+id/textview"
+            android:textColor="@color/white"/>
     <Button
             android:text="Criar um livro"
             android:layout_width="match_parent"
@@ -45,10 +46,12 @@
     <Button
             android:text="Listar comentários sobre os livros"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/listarComentarios"/>
+            android:layout_height="wrap_content" android:id="@+id/listarComentarios"
+            android:backgroundTint="@color/black"/>
     <Button
             android:text="Quantidade de comentários positivos sobre um livro "
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/quantidadePositivos"/>
+            android:layout_height="wrap_content" android:id="@+id/quantidadePositivos"
+            android:backgroundTint="@color/black"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

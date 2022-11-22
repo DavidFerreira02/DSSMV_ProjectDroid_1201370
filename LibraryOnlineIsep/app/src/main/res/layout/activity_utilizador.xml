@@ -6,7 +6,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@drawable/library">
 
     <ProgressBar
             android:id="@+id/progressBar"
@@ -19,26 +20,32 @@
     <TextView
             android:text="Utilizador"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textview"/>
+            android:layout_height="wrap_content" android:id="@+id/textview"
+            android:textColor="@color/white"/>
     <Button
             android:text="Criar um comentário num livro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/criarComentario"/>
+            android:layout_height="wrap_content" android:id="@+id/criarComentario"
+            android:backgroundTint="@color/black"/>
     <Button
             android:text="Alterar um comentario de um livro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/alterarComentario"/>
+            android:layout_height="wrap_content" android:id="@+id/alterarComentario"
+            android:backgroundTint="@color/black"/>
     <Button
-            android:text="Listar todos os comentários de um user"
+            android:text="Listar todos os comentários de um livro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/listarComentarios"/>
+            android:layout_height="wrap_content" android:id="@+id/listarComentarios"
+            android:backgroundTint="@color/black"/>
     <Button
             android:text="Quantidade de opinioes positivas num livro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/quantidadePositivos"/>
+            android:layout_height="wrap_content" android:id="@+id/quantidadePositivos"
+            android:backgroundTint="@color/black"/>
     <Button
             android:text="Listar a opiniao num dado livro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/listarOpiniao"/>
+            android:layout_height="wrap_content" android:id="@+id/listarOpiniao"
+            android:backgroundTint="@color/black"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -38,20 +38,23 @@
                     android:text="Adicionar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"/>
             <Button
                     android:id="@+id/btCancel"
                     android:text="Cancelar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"/>
         </LinearLayout>
         <TextView
-                android:text=""
+                android:text="Number"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/caixaTexto1"/>
+                android:id="@+id/caixaTexto1"
+               android:textColor="@color/black"/>
 
     </LinearLayout>
 </ScrollView>

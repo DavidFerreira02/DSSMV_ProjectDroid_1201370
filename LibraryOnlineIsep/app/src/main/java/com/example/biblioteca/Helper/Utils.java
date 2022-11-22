@@ -25,16 +25,8 @@ public class Utils {
         int ip3 = settings.getInt(IP3, 62);
         int ip4 = settings.getInt(IP4, 24);
 
-        return "http://"+ip1+"."+ip2+"."+ip3+"."+ip4+"/"+WS_NAME;
+        return "http://"+ip1+"."+ip2+"."+ip3+"."+ip4+"//"+WS_NAME;
     }
-    public static void setWSAddress(Context context, int ip1,int ip2,int ip3,int ip4 ){
-        SharedPreferences settings = context.getSharedPreferences(MYSHPREFS,Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putInt(IP1, ip1);
-        editor.putInt(IP2, ip2);
-        editor.putInt(IP3, ip3);
-        editor.putInt(IP4, ip4);
-        editor.commit();
-    }
+
 
 }

@@ -58,20 +58,7 @@ public class JsonHandler {
         return jsonObject.toString();
 
     }
-    public static String findIdCheckOut(String resp,String isbn,String userId) throws JSONException {
-        JSONArray jsonResponse = new JSONArray(resp);
-        String id="";
-        for(int i = 0; i<jsonResponse.length();i++){
-            JSONObject jsonChildNode = jsonResponse.getJSONObject(i);
-            String userIdProcura = jsonChildNode.optString("userId");
-            String isbnProcura = jsonChildNode.optString("isbn");
-            if (isbn == isbnProcura && userId == userIdProcura){
-                id = jsonChildNode.optString("id");
 
-            }
-        }
-        return id;
-    }
     public static List<ComentarioDTO> deSerializeJson2ListComentarioDTO(String resp) throws JSONException {
         JSONArray jsonResponse = new JSONArray(resp);
         List<ComentarioDTO> list = new ArrayList<>();
